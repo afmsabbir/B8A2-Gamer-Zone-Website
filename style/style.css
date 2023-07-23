@@ -76,7 +76,8 @@ nav li a{
     display: flex;
     justify-content: space-around;
     background-image: url('/images/Group\ 14.png');
-    background-position: 100% left;
+    background-position: left;
+    background-repeat: no-repeat;
 }
 .goat-left h3{
     color: #0B0223;
