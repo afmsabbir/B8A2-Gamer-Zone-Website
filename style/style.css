@@ -75,7 +75,7 @@ nav li a{
 .goat{
     display: flex;
     justify-content: space-around;
-    background-image: url('./images/Group\ 14.png');
+    background-image: url('/images/Group\ 14.png');
     background-position: 100% left;
 }
 .goat-left h3{
