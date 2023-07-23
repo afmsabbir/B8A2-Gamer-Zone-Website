@@ -238,11 +238,53 @@ nav li a{
 
 /* online games section end */
 
+/* play instantly start */
+.play-instantly{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+}
+.instantly-left span{
+    color: var(--linear);
+
+}
+.instantly-left h1{
+    color: #0B0223;
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 24px;
+    text-align: right;
+}
+.instantly-left p{
+    text-align: right;
+    color: #534C64;
+    font-size: 18px;
+    font-weight: 400;
+}
+.instantl-right{
+    display: grid;
+
+}
+
+.instantly-img{
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    width: 342px;
+    padding: 40px;
+    position: relative;
+    bottom: 350px;
+    right: 100px;
+}
+/* play instantly end */
+
 /* Responsive media quary */
 
 /* mobile devices */
 @media screen and (max-width: 576px){
-    nav, .goat, .gamer, .online-game-items{
+    nav, .goat, .gamer, .online-game-items, .play-instantly{
         flex-direction: column;
         padding: 20px;
         justify-content: center;
@@ -273,7 +315,7 @@ nav li a{
     .gamer img{
         width: 100%;
     }
-    .gamer-right,{
+    .gamer-right{
         align-items: center;
         text-align: center;
     }
@@ -291,6 +333,11 @@ nav li a{
         width: 300px;
         height: auto;
     }
+    .instantl-right img{
+        width: 100%;
+    }
+    
+    
     
 }
 
@@ -298,7 +345,7 @@ nav li a{
 
 /* tablet or medium devices */
 @media screen and (min-width: 576px) and (max-width: 960px) {
-    nav, .gamer, .online-game-items{
+    nav, .gamer, .online-game-items, .play-instantly{
         flex-direction: column;
         justify-content: center;
         padding: 20px;
