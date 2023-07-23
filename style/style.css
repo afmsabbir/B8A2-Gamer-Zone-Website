@@ -189,7 +189,6 @@ nav li a{
     }
     .goat{
         flex-direction: column;
-        justify-content: center;
         padding: 20px;
     }
     .goat-btn{
