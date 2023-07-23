@@ -120,6 +120,8 @@ nav li a{
 .goat-btn-left{
     color: #FFFFFF;
     background-color: var(--linear);
+    font-size: 20px;
+    font-weight: 600;
     display: inline-flex;
     padding: 21px 40px;
     align-items: flex-start;
@@ -131,6 +133,8 @@ nav li a{
 .goat-btn-right{
     color: #FFFFFF;
     background-color: #4EC5F7;
+    font-size: 20px;
+    font-weight: 600;
     display: inline-flex;
     padding: 21px 40px;
     align-items: flex-start;
@@ -141,16 +145,64 @@ nav li a{
 }
 /* goat section end */
 
+/* gamer section start */
+.gamer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 52px;
+}
 
+.gamer-right{
+    text-align: end;
+}
+.gamer-right h3{
+    color: #8758F1;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+.gamer-p{
+    color: #534C64;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 0;
+    line-height: 30px;
+}
+.gamer-btn{
+    color: #FFFFFF;
+    background-color: var(--linear);
+    font-size: 20px;
+    font-weight: 600;
+    padding: 21px 40px;
+    gap: 10px;
+    border-radius: 48px;
+    border: none;
+    cursor: pointer;
+}
+.gamer-right-footer{
+    color: #534C64;
+    line-height: 45px;
+}
+.gamer-right-footer {
+    font-size: 24px;
+    font-weight: 500;
+}
+.gamer-right-footer span{
+    font-size: 32px;
+    font-weight: 700;
+}
 
+/* gamer section end */
 
 /* Responsive media quary */
 
 /* mobile devices */
 @media screen and (max-width: 576px){
-    nav, .goat{
+    nav, .goat, .gamer{
         flex-direction: column;
         padding: 20px;
+        justify-content: center;
         
     }
     .nav-left{
@@ -170,13 +222,27 @@ nav li a{
     .goat-right img{
         width: 100%;
     }
+    .gamer{
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    .gamer img{
+        width: 100%;
+    }
+    .gamer-right{
+        align-items: center;
+        text-align: center;
+    }
     
 }
 
 /* tablet or medium devices */
 @media screen and (min-width: 576px) and (max-width: 960px) {
-    nav{
+    nav, .gamer{
         flex-direction: column;
+        justify-content: center;
+        padding: 20px;
         
     }
     .nav-left{
