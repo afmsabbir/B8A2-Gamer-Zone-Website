@@ -75,7 +75,8 @@ nav li a{
 .goat{
     display: flex;
     justify-content: space-around;
-    background-image: url('/images/Group\ 14.png');
+    background-image: url('./images/Group\ 14.png');
+    background-position: 100% left;
 }
 .goat-left h3{
     color: #0B0223;
@@ -110,6 +111,7 @@ nav li a{
 .goat-btn{
     display: flex;
     justify-content: space-between;
+    margin-top: 50px;
 }
 
 .goat-btn-left{
@@ -118,7 +120,7 @@ nav li a{
     display: inline-flex;
     padding: 21px 40px;
     align-items: flex-start;
-    gap: 10px;
+    gap: 24px;
     border-radius: 48px;
     border: none;
     cursor: pointer;
@@ -143,8 +145,9 @@ nav li a{
 
 /* mobile devices */
 @media screen and (max-width: 576px){
-    nav{
+    nav, .goat{
         flex-direction: column;
+        padding: 20px;
         
     }
     .nav-left{
@@ -158,6 +161,13 @@ nav li a{
         margin: 0;
         padding-bottom: 20px;
     }
+    .goat-left, .goat-right{
+        justify-content: space-around;
+    }
+    .goat-right img{
+        width: 100%;
+    }
+    
 }
 
 /* tablet or medium devices */
@@ -181,5 +191,8 @@ nav li a{
         flex-direction: column;
         justify-content: center;
         padding: 20px;
+    }
+    .goat-btn{
+        justify-content: space-evenly;
     }
 }
