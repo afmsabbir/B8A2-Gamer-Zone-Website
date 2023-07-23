@@ -194,12 +194,55 @@ nav li a{
 }
 
 /* gamer section end */
+/* online games section star */
+.online-game{
+    text-align: center;
+}
+.online-game h1{
+    color: #0B0223;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.online-game span{
+    color: #8758F1;
+    font-size: 48px;
+    font-weight: 700;
+}
+.online-game p{
+    margin-top: 0;
+    font-size: 18px;
+    color: #534C64;
+    font-weight: 400;
+    margin-bottom: 48px;
+}
+
+.online-game-items{
+    display: flex;
+    justify-content: center;
+    margin-left: 240px;
+    margin-right: 240px;
+    gap: 20px;
+}
+.online-game-items p{
+    color: #534C64;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: left;
+
+
+}
+.item img{
+    border-radius: 16px;
+}
+
+/* online games section end */
 
 /* Responsive media quary */
 
 /* mobile devices */
 @media screen and (max-width: 576px){
-    nav, .goat, .gamer{
+    nav, .goat, .gamer, .online-game-items{
         flex-direction: column;
         padding: 20px;
         justify-content: center;
@@ -230,16 +273,32 @@ nav li a{
     .gamer img{
         width: 100%;
     }
-    .gamer-right{
+    .gamer-right,{
         align-items: center;
         text-align: center;
+    }
+    .item{
+        text-align: center;
+        padding: 0;
+        margin: o;
+    }
+    .online-game-items{
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+    }
+    .item img{
+        width: 300px;
+        height: auto;
     }
     
 }
 
+
+
 /* tablet or medium devices */
 @media screen and (min-width: 576px) and (max-width: 960px) {
-    nav, .gamer{
+    nav, .gamer, .online-game-items{
         flex-direction: column;
         justify-content: center;
         padding: 20px;
@@ -263,5 +322,10 @@ nav li a{
     }
     .goat-btn{
         justify-content: space-evenly;
+    }
+    .online-game-items{
+        justify-content: center;
+        align-items: center;
+
     }
 }
